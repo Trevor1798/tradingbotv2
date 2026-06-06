@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:paper-api.alpaca.markets)",
+      "WebFetch(domain:data.alpaca.markets)",
+      "WebSearch(*)"
+    ]
+  }
+}
