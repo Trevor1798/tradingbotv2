@@ -1,4 +1,8 @@
 {
+  "env": {
+    "ALPACA_API_KEY": "PKSZOZYAYG2OLYJ32LWBYXFYSC",
+    "ALPACA_SECRET_KEY": "CixzvC98Ta2LFH3qWTKK7phUtWDLKPoVDqVHFiLTcySL"
+  },
   "permissions": {
     "allow": [
       "WebFetch(domain:paper-api.alpaca.markets)",
