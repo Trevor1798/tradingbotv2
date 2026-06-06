@@ -55,9 +55,9 @@ Flag any violations. Note what happened and why.
 
 ## Step 6 — Next Week Outlook
 
-Fetch SPY weekly chart:
+Fetch SPY daily chart for trend:
 ```
-GET https://data.alpaca.markets/v2/stocks/SPY/bars?timeframe=1Week&limit=26&feed=iex
+GET https://data.alpaca.markets/v2/stocks/SPY/bars?timeframe=1Day&limit=60&feed=iex
 ```
 
 - What is the current weekly trend going into next week?

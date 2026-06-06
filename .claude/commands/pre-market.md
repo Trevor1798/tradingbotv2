@@ -26,13 +26,13 @@ GET https://paper-api.alpaca.markets/v2/account
 
 Log: portfolio value, buying power, cash. If `trading_blocked` or `account_blocked` is true → log and stop.
 
-## Step 4 — Determine Weekly Trend
+## Step 4 — Determine Trend
 
 ```
-GET https://data.alpaca.markets/v2/stocks/SPY/bars?timeframe=1Week&limit=26&feed=iex
+GET https://data.alpaca.markets/v2/stocks/SPY/bars?timeframe=1Day&limit=60&feed=iex
 ```
 
-Look at the last 8–12 weekly candles. Are highs and lows trending up, down, or sideways?
+Analyze the last 60 daily bars. Compare the first close to the last close, and check whether recent highs and lows are trending up, down, or sideways. (Weekly timeframe not available on free IEX feed — use 60 daily bars as the trend filter instead.)
 
 - **UPTREND** → bias long setups today
 - **DOWNTREND** → bias short setups today
